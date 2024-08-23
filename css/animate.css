@@ -1,0 +1,64 @@
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* slide left */
+/* slide left */
+/* slide left */
+/* slide left */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* slide right */
+/* slide right */
+/* slide right */
+body {
+    /* font-family: Arial, sans-serif; */
+    /* height: 200vh; Increase the height to make scrolling possible */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.slide-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* animate once */
+/* animate once */
+/* animate once */
+
+.animate-once {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-once.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
